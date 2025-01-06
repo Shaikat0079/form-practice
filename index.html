@@ -7,11 +7,30 @@
     <style>
       #f_name,
       #l_name,
-      #email_add {
+      #email_add,
+      #phone_num {
         margin-bottom: 8px;
       }
       .selection {
         margin-bottom: 5px;
+      }
+      button {
+        margin: 10px 5px;
+      }
+      img {
+        height: 300px;
+        width: 550px;
+      }
+      .tsupra {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      hr{
+        border: 2px solid red;
+      }
+      footer{
+        text-align: center;
       }
     </style>
   </head>
@@ -21,6 +40,12 @@
     </header>
     <nav></nav>
     <main>
+      <section class="tsupra">
+        <img
+          src="https://s3-ap-southeast-2.amazonaws.com/imotor-cms/images_cms/161565_toyota-grsupra-hero-dec22-am.jpg"
+          alt=""
+        />
+      </section>
       <form action="">
         <section>
           <div id="f_name">
@@ -59,6 +84,10 @@
               placeholder="Enter Phone Number"
             />
           </div>
+          <div id="meetingdate">
+            <label for="meeting">Meeting: </label>
+            <input type="date" id="meeting" name="meeting" />
+          </div>
         </section>
         <fieldset>
           <legend>Select your company</legend>
@@ -78,27 +107,33 @@
         <fieldset>
           <legend>Choose your Model/s</legend>
           <div class="checkbox_group">
-            <input type="checkbox" name="model" id="supra">
+            <input type="checkbox" name="model" id="supra" />
             <label for="supra">Supra</label>
           </div>
           <div class="checkbox_group">
-            <input type="checkbox" name="model" id="gr86">
+            <input type="checkbox" name="model" id="gr86" />
             <label for="gr86">GR86</label>
           </div>
           <div class="checkbox_group">
-            <input type="checkbox" name="model" id="grcorolla">
+            <input type="checkbox" name="model" id="grcorolla" />
             <label for="grcorolla">GR Corolla</label>
           </div>
           <div class="checkbox_group">
-            <input type="checkbox" name="model" id="gryaris">
+            <input type="checkbox" name="model" id="gryaris" />
             <label for="gryaris">GR Yaris</label>
           </div>
           <div class="checkbox_group">
-            <input type="checkbox" name="model" id="chr">
+            <input type="checkbox" name="model" id="chr" />
             <label for="chr">CHR</label>
           </div>
         </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
       </form>
+      <hr>
     </main>
+    <footer>
+        <p>&copy; All Rights Reserved!</p>
+    </footer>
   </body>
 </html>
